@@ -16,6 +16,8 @@ Este proyecto combina **Django** como backend y **n8n** como motor de automatiza
   - Filtra, elimina duplicados y envía datos al endpoint Django para disparar los emails.  
   - Registra las respuestas de cada formulario y actualiza el estado de las tareas en Lobees.  
 
+He tenido que usar ngrok para abrir los puertos, por eso las urls de baleless...
+
 ---
 
 ## Workflow Logic
@@ -120,9 +122,12 @@ Este proyecto combina **Django** como backend y **n8n** como motor de automatiza
 ---
 
 ## How to Run the System
-
+Para desarrollo local, se utiliza ngrok para exponer el servidor Django y permitir que n8n haga llamadas HTTP externas. Cada vez que se inicia ngrok, se genera una URL pública que debe reemplazar las URLs de los webhooks y formularios en n8n. Por ejemplo:
+https://baleless-otha-soaked.ngrok-free.dev/form/step1/{{lead_email}}/
 1. **Django Backend:**  
    ```bash
    pip install -r requirements.txt
    python manage.py migrate
    python manage.py runserver
+
+  
