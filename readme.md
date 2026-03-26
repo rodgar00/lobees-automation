@@ -75,7 +75,7 @@ Este proyecto combina **Django** como backend y **n8n** como motor de automatiza
      ```
 
 5. **Registro de logs y actualización de estado en Lobees:**  
-   - Una vez el usuario responde, n8n envía un log:
+   - Una vez el usuario responde, n8n envía un log, dependiendo de la respuesta que haya sido del step que toque:
      ```json
      POST https://api.lobees.com/api/project/addtasklog?token=TOKEN
      {
