@@ -28,7 +28,7 @@ Este proyecto combina **Django** como backend y **n8n** como motor de automatiza
      ```
      GET https://api.lobees.com/api/automationtaskschedule/proactive?email=EMAIL
      ```  
-   - Filtra tareas pendientes (`status` pendiente) y elimina duplicados.  
+   - Saca el data necesario, filtra tareas pendientes (`status` pendiente) y elimina duplicados.  
 
 3. **Envío de emails:**  
    - HTTP Request a Django:
