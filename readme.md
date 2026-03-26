@@ -40,7 +40,7 @@ Este proyecto combina **Django** como backend y **n8n** como motor de automatiza
      {
        "lead_email": "usuario@example.com",
        "step": 1,
-       "taskid": "uuid-del-task"
+       "taskid": "id_task"
      }
      ```
 
@@ -79,7 +79,7 @@ Este proyecto combina **Django** como backend y **n8n** como motor de automatiza
      ```json
      POST https://api.lobees.com/api/project/addtasklog?token=TOKEN
      {
-       "taskid": "uuid-del-task",
+       "taskid": "id_task",
        "description": {
          "interested": true,
          "reschedule": true,
